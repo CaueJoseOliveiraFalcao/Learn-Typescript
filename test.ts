@@ -1,17 +1,22 @@
-class Default {
-    text : string;
-    numero : number;
-    qualquer : any;
-    boleano : boolean;
-    array : any[];
+interface Usuario {
+    nome : string;
+    id : number;
+}
 
-    constructor(){
-        this.metodo();
+class Usuario_Da_Conta {
+    nome : string;
+    id : number;
 
+    constructor(nome : string , id : number){
+        this.nome = nome
+        this.id = id
     }
-    metodo(){
-        this.text = `Esye e um alert simpls em tyscript`;
-        this.numero = 10;
-        return alert(this.text)
+    showName(){
+        console.log(this.nome,this.id)
     }
 }
+
+
+const user_1 : Usuario = new Usuario_Da_Conta('Caue' , 1);
+
+console.log(user_1.id)

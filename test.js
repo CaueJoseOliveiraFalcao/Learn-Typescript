@@ -1,10 +1,12 @@
-var Default = /** @class */ (function () {
-    function Default() {
-        this.metodo();
+var UsuarioDaConta = /** @class */ (function () {
+    function UsuarioDaConta(nome, id) {
+        this.nome = nome;
+        this.id = id;
     }
-    Default.prototype.metodo = function () {
-        this.text = "Esye e um alert simpls em tyscript";
-        return alert(this.text);
+    UsuarioDaConta.prototype.showName = function () {
+        console.log(this.nome, this.id);
     };
-    return Default;
+    return UsuarioDaConta;
 }());
+var user_1 = new UsuarioDaConta('Caue', 1);
+console.log(user_1.id);
