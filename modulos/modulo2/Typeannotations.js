@@ -64,3 +64,11 @@ function CriarPessoa() {
 ;
 console.log(CriarPessoa('Caue', 'Falcao'));
 console.log(CriarPessoa('Caue', 'jose', 'Falcao'));
+var Idioma;
+(function (Idioma) {
+    Idioma[Idioma["Portugues"] = 0] = "Portugues";
+    Idioma[Idioma["Ingles"] = 1] = "Ingles";
+    Idioma[Idioma["Espanhol"] = 2] = "Espanhol";
+    Idioma[Idioma["Frances"] = 3] = "Frances";
+})(Idioma || (Idioma = {}));
+console.log(Idioma);

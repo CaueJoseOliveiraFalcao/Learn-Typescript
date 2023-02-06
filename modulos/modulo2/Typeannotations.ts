@@ -88,3 +88,30 @@ type Nome =
 
 console.log(CriarPessoa('Caue','Falcao'))
 console.log(CriarPessoa('Caue','jose','Falcao'))
+
+enum Idioma{
+    Portugues,
+    Ingles,
+    Espanhol,
+    Frances
+}
+
+console.log(Idioma)
+
+enum Dia {
+    Segunda = 'SEG',
+    Terca = 'TER'
+}
+
+console.log(Dia)
+
+const enum Comida {
+    Hamburge,
+    Massa
+}
+
+function comida(c:Comida){
+    return 'hi'
+}
+
+console.log(comida(Comida.Massa))
